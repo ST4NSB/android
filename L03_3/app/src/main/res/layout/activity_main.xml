@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/disBttn"
+        android:layout_width="189dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="220dp"
+        android:onClick="onClickDis"
+        android:text="@string/disconnect_service"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@string/disconnect_service" />
+
+    <EditText
+        android:id="@+id/SetA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/SetB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/union"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:onClick="onClickUnion"
+        android:text="@string/union"
+        app:layout_constraintStart_toStartOf="@+id/disBttn"
+        app:layout_constraintTop_toBottomOf="@+id/disBttn" />
+
+    <Button
+        android:id="@+id/intersection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:onClick="onClickIntersection"
+        android:text="intersection"
+        app:layout_constraintStart_toStartOf="@+id/disBttn"
+        app:layout_constraintTop_toBottomOf="@+id/disBttn" />
+
+    <Button
+        android:id="@+id/difference"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="144dp"
+        android:onClick="onClickDifference"
+        android:text="difference (A-B)"
+        app:layout_constraintStart_toStartOf="@+id/disBttn"
+        app:layout_constraintTop_toBottomOf="@+id/disBttn" />
+
+    <Button
+        android:id="@+id/symdifference"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="212dp"
+        android:onClick="onClickSymDifference"
+        android:text="symmetric difference"
+        app:layout_constraintStart_toStartOf="@+id/disBttn"
+        app:layout_constraintTop_toBottomOf="@+id/disBttn" />
+
+    <Button
+        android:id="@+id/conBttn"
+        android:layout_width="149dp"
+        android:layout_height="39dp"
+        android:layout_marginBottom="16dp"
+        android:onClick="onClickCon"
+        android:text="@string/connect_service"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/disBttn"
+        app:layout_constraintStart_toStartOf="@+id/disBttn" />
+
+    <TextView
+        android:id="@+id/statusTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginBottom="24dp"
+        android:text="@string/status_disconnected"
+        app:layout_constraintBottom_toTopOf="@+id/disBttn"
+        app:layout_constraintStart_toEndOf="@+id/conBttn" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="120dp"
+        android:text="Result: "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

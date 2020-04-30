@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">L03_3</string>
+    <string name="disconnect_service">Disconnect Service</string>
+    <string name="connect_service">Connect Service</string>
+    <string name="status_0">status: 0</string>
+    <string name="logic">Logic</string>
+    <string name="union">Union</string>
+    <string name="status_disconnected">status: Disconnected</string>
+</resources>
