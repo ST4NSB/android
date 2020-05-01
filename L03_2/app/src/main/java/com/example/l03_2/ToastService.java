@@ -11,11 +11,10 @@ public class ToastService extends Service {
 
     @Override
     public void onCreate() {
-       // ToastService("onCreate");
+        mHandler = new Handler();
     }
 
     public int onStartCommand(Intent intent, int flags, int startId) {
-        mHandler = new Handler();
         return START_STICKY;
     }
 

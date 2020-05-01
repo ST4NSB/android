@@ -11,13 +11,14 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
     final int BOUNDED = 1, UNBOUNDED = 0;
-    private int status = UNBOUNDED;
+    private int status;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        status = UNBOUNDED;
     }
 
     public void onClick(View view) {
